@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CyberLearn Dressing Room</title>
+        <!-- Meta tags cần thiết -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="./../assets/css/style.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- Phần tiêu đề và logo -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="text-center">
+                            <img
+                                src="./../assets/images/cybersoft.png"
+                                alt="Card image"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                                CyberLearn - Học lập trình trực tuyến - Dự án
+                                thử đồ trực tuyến - Virtual Dressing Room
+                            </h4>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+
+            <!-- Tabs menu và nội dung tab -->
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- Tabs để chọn danh mục sản phẩm -->
+                    <ul class="nav nav-pills" id="clothing-tabs">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                data-toggle="tab"
+                                href="#tab-shirts"
+                                >Áo</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="tab"
+                                href="#tab-pants"
+                                >Quần</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="tab"
+                                href="#tab-shoes"
+                                >Giày Dép</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="tab"
+                                href="#tab-bags"
+                                >Túi Xách</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="tab"
+                                href="#tab-necklaces"
+                                >Dây Chuyền</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="tab"
+                                href="#tab-hairstyles"
+                                >Kiểu Tóc</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                data-toggle="tab"
+                                href="#tab-backgrounds"
+                                >Nền</a
+                            >
+                        </li>
+                    </ul>
+
+                    <!-- Tab content -->
+                    <div class="tab-content mt-3">
+                        <!-- Áo -->
+                        <div class="tab-pane fade show active" id="tab-shirts">
+                            <div id="shirts-list" class="row">
+                                <!-- Các item áo sẽ được thêm vào đây -->
+                            </div>
+                        </div>
+                        <!-- Quần -->
+                        <div class="tab-pane fade" id="tab-pants">
+                            <div id="pants-list" class="row">
+                                <!-- Các item quần sẽ được thêm vào đây -->
+                            </div>
+                        </div>
+                        <!-- Giày Dép -->
+                        <div class="tab-pane fade" id="tab-shoes">
+                            <div id="shoes-list" class="row">
+                                <!-- Các item giày sẽ được thêm vào đây -->
+                            </div>
+                        </div>
+                        <!-- Túi Xách -->
+                        <div class="tab-pane fade" id="tab-bags">
+                            <div id="bags-list" class="row">
+                                <!-- Các item túi xách sẽ được thêm vào đây -->
+                            </div>
+                        </div>
+                        <!-- Dây Chuyền -->
+                        <div class="tab-pane fade" id="tab-necklaces">
+                            <div id="necklaces-list" class="row">
+                                <!-- Các item dây chuyền sẽ được thêm vào đây -->
+                            </div>
+                        </div>
+                        <!-- Kiểu Tóc -->
+                        <div class="tab-pane fade" id="tab-hairstyles">
+                            <div id="hairstyles-list" class="row">
+                                <!-- Các item kiểu tóc sẽ được thêm vào đây -->
+                            </div>
+                        </div>
+                        <!-- Nền -->
+                        <div class="tab-pane fade" id="tab-backgrounds">
+                            <div id="backgrounds-list" class="row">
+                                <!-- Các item nền sẽ được thêm vào đây -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phần hiển thị người mẫu và trang phục đã chọn -->
+                <div class="col-md-4">
+                    <div class="contain">
+                        <div class="body">
+                            <!-- Đây là phần cơ bản của mô hình -->
+                            <img
+                                src="./../assets/images/model.png"
+                                alt="Model Image"
+                            />
+                        </div>
+                        <div class="model"></div>
+                        <div class="hairstyle"></div>
+                        <div class="necklace"></div>
+                        <div class="bikinitop"></div>
+                        <div class="bikinibottom"></div>
+                        <div class="handbag"></div>
+                        <div class="feet"></div>
+                        <div class="background"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Các file JS cần thiết -->
+        <!-- <script src="./../models/ListChosen.js"></script>
+        <script src="./../models/ChoseItem.js"></script>
+        <script src="./../utils/callData.js"></script> -->
+        <script src="./../controllers/main.js"></script>
+    </body>
+</html>
